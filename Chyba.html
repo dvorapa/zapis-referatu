@@ -1,0 +1,53 @@
+<!Doctype Html>
+<Html Lang="cs">
+<Head>
+<Meta Charset="Utf-8">
+<Meta Name="Application-name" Content="Zápis referátů">
+<Meta Name="Author" Content="Pavel Dvořák">
+<Meta Name="Description" Content="Stránky třídy 8.O Gymnázia Dr. Josefa Pekaře určené pro volbu a rezervaci referátů">
+<Meta Name="Keywords" Content="Gymnázium Dr. Josefa Pekaře,8.O,204">
+<Meta Name="Robots" Content="Nofollow,noindex">
+<Meta Name="Viewport" Content="width=device-width,user-scalable=no">
+<Link Type="Image/x-icon" Rel="Shortcut icon" Href="favicon.ico">
+<Style Type="Text/css">
+Body{Background-image:url(Kresby/Chyba.png);Overflow:hidden;Text-align:center}
+#Prvek{Background-color:white;-moz-box-shadow:2px 2px 1px 1px #7c6c7c;-webkit-box-shadow:2px 2px 1px 1px #7c6c7c;Box-shadow:2px 2px 1px 1px #7c6c7c;Height:40%;Margin:auto;Padding:4%;Position:absolute;Width:50%;Top:0;Left:0;Bottom:0;Right:0}
+#Obal{Height:100%;Width:100%}
+#Obsah{Font-family:garamond,serif;Font-size:12px}
+A,Strong{Color:#d2d200}
+A{Font-weight:bold}
+@media (max-height:350px) and (orientation:landscape){
+#Prvek{Height:auto;Margin:0 auto}
+}
+@media (max-width:500px) and (orientation:portrait){
+#Prvek{Margin:auto 0;Width:auto}
+}
+</Style>
+<Script Type="Text/javascript">
+/*Vyplnit*/
+var Obal,Obsah,Velikost;
+function Vyplnit(){
+Obal=document.getElementById('Obal');
+Obsah=document.getElementById('Obsah');
+Velikost=0;
+while(Obsah.offsetHeight<Obal.offsetHeight){
+Obsah.style.fontSize=Velikost+'px';
+Velikost++;
+}}
+document.onreadystatechange=function(){Vyplnit();};
+</Script>
+<Title>Chyba</Title>
+</Head>
+<Body Onresize="location.reload();">
+<Div Id="Prvek">
+<Div Id="Obal">
+<Div Id="Obsah">
+<Strong>Omlouvám se</Strong>, ale stránku nelze správně načíst.
+Chyba je na mé straně, někde jsem na něco určitě zapomněl.
+Jsi-li na mobilu, zkus prosím stránku otevřít na počítači nebo tabletu.
+Jsi-li na počítači, zkus prosím aktualizovat svůj <A Href="http://www.whatbrowser.org/intl/cs/" Title="Aktualizovat prohlížeč? Cože? Banány? Klikni sem!">prohlížeč</A>.
+</Div>
+</Div>
+</Div>
+</Body>
+</Html>

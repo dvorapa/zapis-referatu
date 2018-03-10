@@ -1,0 +1,35 @@
+/*Oprava pro IE:Background-size*/
+Html,Body{Height:100%;Margin:0;Overflow:hidden;Width:100%}
+
+/*Společné*/
+Body{-moz-background-size:cover;-webkit-background-size:cover;Background-size:cover;Color:#7c6c7c;Font-family:Cinzel,"Marcellus SC",garamond,serif;Font-size:1.1em;Text-align:center}
+A{Color:#7c6c7c;Text-decoration:none}
+Header,Article,Iframe[Src="Zapisy.html"],Nav>Div,Nav>A,.Prvky{Background-color:white;-moz-box-shadow:2px 2px 1px 1px #7c6c7c;-webkit-box-shadow:2px 2px 1px 1px #7c6c7c;Box-shadow:2px 2px 1px 1px #7c6c7c;Position:absolute}
+Iframe[Src="Zapisy.html"]{Border:0;Height:80%;Left:5%;Top:10%;Width:75%}
+
+/*Navigace*/
+Nav>A{Cursor:pointer;Left:85%;Width:10%}
+#Vchod{Top:10%}
+#Zapisy{Top:18%}
+#Pokyny{Font-weight:bold;Top:26%}
+#Podklady{Top:34%}
+#Odchod{Top:42%}
+#Pomoc{-moz-border-radius:100%;-webkit-border-radius:100%;Border-radius:100%;Font-size:1.5em;Font-weight:bold;Height:1.1em;Left:89%;Top:50%;Width:1.1em}
+
+/*Rohy*/
+Aside>Img{Cursor:pointer;Height:50px;Opacity:0.8;Position:absolute;Width:50px}
+Aside>Img:hover,Aside>Img:active{Opacity:1}
+Aside>Img:nth-of-type(1){Left:0;Top:0}
+Aside>Img:nth-of-type(2){Right:0;Top:0;-moz-transform:rotate(90deg);-ms-transform:rotate(90deg);-o-transform:rotate(90deg);-webkit-transform:rotate(90deg);Transform:rotate(90deg)}
+Aside>Img:nth-of-type(3){Bottom:0;Right:0;-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);-webkit-transform:rotate(180deg);Transform:rotate(180deg)}
+Aside>Img:nth-of-type(4){Bottom:0;Left:0;-moz-transform:rotate(270deg);-ms-transform:rotate(270deg);-o-transform:rotate(270deg);-webkit-transform:rotate(270deg);Transform:rotate(270deg)}
+
+/*Podklady*/
+#Podklady>A{Font-size:.8em;Height:100%;Width:50%}
+#Podklady>A:first-child{Color:#ffff4d;-moz-box-shadow:2px 0 0 0 #7c6c7c;-webkit-box-shadow:2px 0 0 0 #7c6c7c;Box-shadow:2px 0 0 0 #7c6c7c;Float:left}
+#Podklady>A:last-child{Color:#4dff4d;Float:right}
+
+/*Odchod*/
+#Odchod>A{Height:100%;Width:50%}
+#Odchod>A:first-child{Color:#4d4dff;-moz-box-shadow:2px 0 0 0 #7c6c7c;-webkit-box-shadow:2px 0 0 0 #7c6c7c;Box-shadow:2px 0 0 0 #7c6c7c;Float:left}
+#Odchod>A:last-child{Color:#ff4d4d;Float:right}
